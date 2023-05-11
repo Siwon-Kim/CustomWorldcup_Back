@@ -1,0 +1,13 @@
+#
+config:
+  target: http://localhost:3000
+  tls:
+  rejectUnauthorized: false
+  phases:
+    - duration: 10
+      arrivalRate: 100
+scenarios:
+  - name: "wordcup 조회"
+    flow:
+      - get:
+          url: "/api/worldcup"

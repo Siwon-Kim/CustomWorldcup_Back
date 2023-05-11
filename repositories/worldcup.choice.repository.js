@@ -54,6 +54,7 @@ class WorldcupChoiceRepository {
 
   findAllWorldcupChoices = async (worldcup_id) => {
     return await this.worldcupChoiceModel.findAll({
+      order: [['win_count', 'DESC']],
       where: { worldcup_id },
     });
   };

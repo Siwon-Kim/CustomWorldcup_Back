@@ -41,7 +41,7 @@ class WorldcupRepository {
       include: [
         {
           model: Worldcup_choices,
-          attributes: ["choice_name", "choice_url"],
+          attributes: ["choice_name", "choice_url", "worldcup_choice_id"],
           required: true,
         },
         {
@@ -111,25 +111,6 @@ class WorldcupRepository {
     const increaseLikesData = await findLikesData.increment("likes", { by: 1 });
     return increaseLikesData;
   };
-
-  // getWorldcupResult = async (worldcup_id, worldcup_choice_id) => {
-  //   return await this.worldcupsModel.findOne({
-  //     include: [
-  //       {
-  //         model: Worldcup_choices,
-  //         attributes: ["choice_name", "choice_url", "win_count"],
-  //         required: true,
-  //       },
-  //     ],
-  //     attributes: ["worldcup_id", "user_id", "title", "content", "play_count"],
-  //     where: {
-  //       [Op.and]: [
-  //         { worldcup_id },
-  //         { "Worldcup_choices.worldcup_choice_id": worldcup_choice_id },
-  //       ],
-  //     },
-  //   });
-  // };
 }
 
 module.exports = WorldcupRepository;

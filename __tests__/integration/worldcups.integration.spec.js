@@ -30,14 +30,14 @@ describe("Worldcups Domain 통합 테스트", () => {
     content: "제일 귀여운 고양이 고르기",
     choices: [
       {
-        choice_name: "고양이1",
+        choice_name: "고양이",
         choice_url:
           "https://img.freepik.com/free-photo/adorable-kitty-looking-like-it-want-to-hunt_23-2149167099.jpg?size=626&ext=jpg",
       },
       {
-        choice_name: "고양이2",
+        choice_name: "고양이",
         choice_url:
-          "https://img.freepik.com/free-photo/the-red-or-white-cat-i-on-white-studio_155003-13189.jpg?size=626&ext=jpg",
+          "https://img.freepik.com/free-photo/adorable-kitty-looking-like-it-want-to-hunt_23-2149167099.jpg?size=626&ext=jpg",
       },
     ],
   };
@@ -48,14 +48,14 @@ describe("Worldcups Domain 통합 테스트", () => {
     content: "제일 귀여운 강아지 고르기",
     choices: [
       {
-        choice_name: "강아지1",
+        choice_name: "강아지",
         choice_url:
           "https://img.freepik.com/free-photo/adorable-kitty-looking-like-it-want-to-hunt_23-2149167099.jpg?size=626&ext=jpg",
       },
       {
-        choice_name: "강아지2",
+        choice_name: "강아지",
         choice_url:
-          "https://img.freepik.com/free-photo/the-red-or-white-cat-i-on-white-studio_155003-13189.jpg?size=626&ext=jpg",
+          "https://img.freepik.com/free-photo/adorable-kitty-looking-like-it-want-to-hunt_23-2149167099.jpg?size=626&ext=jpg",
       },
     ],
   };
@@ -441,7 +441,7 @@ describe("Worldcups Domain 통합 테스트", () => {
       .set("Authorization", `Bearer ${userData.accessToken}`) // 헤더에 Access Token 세팅
       .set("refreshtoken", `${userData.refreshToken}`) // 헤더에 Refresh Token 세팅
       .send(updateWorldcupRequestBodyParams); // Request Body
-      
+
     /** DELETE /api/worldcup/:worldcup_id API의 에러 케이스 검증 로직 **/
     // 1. API를 호출하였을 때, 해당 게시물에 대한 삭제 권한이 없으면 403 Http Status Code를 반환한다.
     expect(response.status).toEqual(403);
