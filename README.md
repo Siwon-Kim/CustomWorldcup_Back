@@ -38,7 +38,7 @@
 |Tech|Skills|Tech|Skills|
 | :-: | :-: | :-: | :-: |
 |Language|JavaScript|Framework|Express.js, React.js|
-|Frontend|Redux|Backend|bcrypt, nodemailer, jest, supertest|
+|Collaboration|Swagger|Backend|bcrypt, nodemailer, jest, supertest|
 |DB|MySQL(AWS RDS), Redis|Infra|AWS EC2|
 
  
