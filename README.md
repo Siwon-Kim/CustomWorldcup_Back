@@ -45,6 +45,8 @@
 <br>
 
 # 💣 Troubleshooting
+1. Communication / Connection Issues between FE & BE: [Description](https://www.notion.so/siwonmadang/Communication-Connection-Issues-between-FE-BE-9f222726214e45159cb5e0e1c1c0d8e1?pvs=4) </br>
+2. Integration Test: using Agent: [Description](https://www.notion.so/siwonmadang/Integration-Test-using-Agent-273c5957bf4c4dcebcd173605da607a8?pvs=4) </br>
 
 <br>
 
