@@ -10,10 +10,10 @@
 
 * **Project Title** : Custom Worldcup
 * **Period** : May 5th, 2023 ~ May 11th, 2023
-* **Subject** : A web service in a bulletin board format, allowing users to share and play the worldcup game with others.
+* **Subject** : A web service in a bulletin board format, allowing users to share and play the tournament game with others.
 * **Main Features** :
-   1. Create worldcup game <br>
-   2. Share worldcup game in a board <br>
+   1. Create tournament game <br>
+   2. Share tournament game in a board <br>
    3. View and play others' game <br>
    4. Leave comments for the posting
 <br>
